@@ -1,0 +1,66 @@
+what is Array?why array?
+let a=20;
+Arrays are used to store multiple values,Arrays in js are dynamic,
+=======================================
+here dynamic means 
+-----------------
+example in java -- string arr[]=new Array[10];
+but in js 
+const arr=[];
+
+
+
+
+let arr=[];
+
+ Different ways to store element in an array
+  method ---1
+
+  arr[0]=12;
+  arr[4]="Ayub";
+
+  method --2
+
+  for(let i=0;i<=10;i++){
+     arr[i]=i; 
+  }
+
+  console.log(arr);
+
+let A=[12,3,4,5];
+
+
+for(let i=0;i<A.length;i++){
+     arr[i]=A[i];
+}
+
+//Basic Array methods 
+
+push 
+Pop;
+shift 
+unshift
+A[A.length]=90;
+ A.push(45);
+ console.log(A);
+ let ans=A.pop();
+  console.log(ans);
+ pop also returns the deleted element 
+ 
+ shift removes the element from the start of an array
+
+ let ans2=A.shift();
+   console.log("ans2",ans2);
+ console.log(A);
+unshift  adds the element at  the starting 
+
+A.unshift("Ayub");
+console.log(A);
+
+
+
+            
+
+
+
+
