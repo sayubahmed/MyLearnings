@@ -1,0 +1,136 @@
+Higher order functions 
+==========================
+
+function fun(num){
+     
+    num();
+     console.log("iam good learnere");
+}
+
+function work(){
+     console.log("iam work");
+}
+
+fun(work);
+
+========================================
+function fun(a){
+   a();
+
+   console.log("iam first function");
+}
+
+fun(function(){
+    console.log("iam call back function")
+}
+);
+
+------------
+function fun(a){
+   console.log("iam main funciton ");
+   a();
+}
+
+fun(function(){
+      console.log("Abdulla is a good learner");
+});
+============================================
+
+Replacing with arrow function
+--------------------------
+
+function fun(a){
+
+     console.log("iam a good learner");
+     a();
+}
+fun(()=>{
+    console.log("iam a callback function with fat arrow");
+})
+================================================================================
+Important methods in an Array
+
+
+
+ function fun(one,two,a){
+     console.log("something");
+       a(one,two);
+ }
+
+ function addtion(c,d){
+    console.log(c+d);
+ }
+
+ fun(10,20,addtion);
+ -----------------
+ 
+
+function fun(num1,num2,a){
+      console.log("iam normal funcion");
+      a(num1,num2);
+}
+function work(c,d){
+    console.log(c+d);
+}
+ fun(10,56,work);
+ 
+ =====================================
+ 
+ 
+ function fun(num1,num2,a){
+      console.log("iam normal funcion");
+      a(num1,num2);
+}
+
+ fun(10,56,(c,d)=>{
+     console.log(c+d);
+ });
+ ====================================
+ 
+ 
+let arr=[12,3,4,5,89]
+
+ 
+
+function fun(element,index,c){
+       c(element,index); 
+}
+
+for(let i=0;i<arr.length;i++){
+
+fun(arr[i],i,(c,d)=>{
+    console.log(c+d,"index",d);
+})
+}
+
+
+1) ForEach
+
+
+
+
+
+let arr=[12,3,4,5,89]
+
+ 
+
+// function fun(element,index,c){
+//        c(element,index); 
+// }
+
+// for(let i=0;i<arr.length;i++){
+
+// fun(arr[i],i,(c,d)=>{
+//     console.log(c+d,"index",d);
+// })
+// }
+
+
+ arr.forEach((el,idx)=>{
+      console.log(el+idx);
+
+ })
+
+
+
+
